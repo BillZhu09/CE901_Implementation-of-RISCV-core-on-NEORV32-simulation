@@ -2,17 +2,25 @@
 
 ## Abstract
 
-## Background
+## 1. Background
+* 1.1 [*RISCV*]
+* 1.2 [*SOC*]
+* 1.3 [*CPU*]
+* 1.4 [*Neorv32*]
+* 1.5 [*Vivado*]
+* 1.6 [*True Random Number Generator and Pseudo-Random Number Generator*]
 
-## Pre-setting
+## 2. Pre-setting
+* 2.1 [*Linux Virtual Machine*]
+* 2.2 [*Vivado*]
 
+## 3. Methodology
+* 3.1 [*Software toolchain*]
+* 3.2 [*Hardware design*]
 
-## Methodology
+## 4. Result
+* 4.1 [*Software Testing*]
+* 4.2 [*Hardware Testing*]
 
-
-
-## Result
-
-
-## Conclusion 
+## 5. Conclusion 
 
