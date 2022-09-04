@@ -50,4 +50,28 @@ generic (
   More specific result of testing setup can be found: https://stnolting.github.io/neorv32/ug/#_general_hardware_setup
   
   
+  
+  
+  
+  
 ***The software framework setup needs to be aware of the hardware configuration in order to permit executables to be truly executed on the NEORV32 Processor. The memory configuration is the main topic of this manual. Refer to the Enabling RISC-V CPU Extensions section to enable specific CPU ISA features.***
+
+
+This guide shows how to configure the linker script for a given hardware memory configuration. More information regarding the linker script itself can be found in the according section of the data sheet: https://stnolting.github.io/neorv32/#_linker_script
+
+## Modifying the Linker Script
+This will modify the linker script itself.
+ ```
+***1.*** Open the NEORV32 linker script sw/common/neorv32.ld with a text editor. Right at the beginning of this script you will find the NEORV32 memory configuration configuration section:
+
+/* Default rom/ram (IMEM/DMEM) sizes */
+__neorv32_rom_size = DEFINED(__neorv32_rom_size) ? __neorv32_rom_size : 2048M; 
+__neorv32_ram_size = DEFINED(__neorv32_ram_size) ? __neorv32_ram_size : 8K; 
+
+/* Default HEAP size (= 0; no heap at all) */
+__neorv32_heap_size = DEFINED(__neorv32_heap_size) ? __neorv32_heap_size : 0; 
+
+/* Default section base addresses - do not change this unless the hardware-defined address space layout is changed! */
+__neorv32_rom_base = DEFINED(__neorv32_rom_base) ? __neorv32_rom_base : 0x00000000; /* = VHDL package's "ispace_base_c" */ 
+__neorv32_ram_base = DEFINED(__neorv32_ram_base) ? __neorv32_ram_base : 0x80000000; /* = VHDL package's "dspace_base_c" */ 
+ ```
