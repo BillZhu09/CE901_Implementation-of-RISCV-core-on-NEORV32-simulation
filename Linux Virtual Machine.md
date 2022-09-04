@@ -37,3 +37,54 @@ number).
 name). Choose either the 32-bit or 64-bit version, depending on your current operating system platform,
 and click the link.
 
+**d.** A new web page will appear. Select a download mirror site from which to download the operating system.
+Click a mirror site to activate the Linux file download. When prompted by the browser, choose to save the
+Linux .iso file to a local directory.
+**e.** When the file has finished downloading, you should have a Linux Mint .iso bootable image.
+
+## Part 2: Create a Virtual Machine
+
+In Part 2, using the VMware Player, you will create a virtual machine and customize its virtual hardware.
+Then, using the Linux Mint .iso file that you downloaded in Part 1, you will install the Linux Mint operating
+system on the virtual machine.
+Step 1: Create a virtual computer and customize the virtual hardware.
+
+**a.** Open VMware Player, and click Create a New Virtual Machine.
+
+**b.** A new window will appear. Select I will install the operating system later. The virtual machine will be
+created with a blank hard disk option. Click Next.
+
+**c.** A new window will appear. Select Linux as the guest operating system. Under version, you may notice
+that Mint is not listed. In this case, select an alternate Linux distribution, one that is closely related to Mint
+(like Ubuntu). Lastly, select either the 32-bit or 64-bit version and click Next.
+
+**d.** A new window will appear. Select a name and storage location for the virtual machine.
+
+**e.** A new window will appear. Select the maximum size of the virtual hard drive storage. You can also decide
+whether or not to store the virtual hard drive in a single file or in multiple files.
+
+**f.** When a new window appears, click Finish to finish creating the virtual machine hardware, or click
+Customize Hardware to customize the virtual hardware. For example, you can specify the amount of
+RAM, how many CPU cores you want, and add additional drives and peripheral components.
+
+**g.** When you have customized and completed the process, you are now ready to run your virtual machine
+and install an operating system.
+
+# Step 2: Install the Linux operating system on the virtual computer.
+
+To install from an .iso bootable image file, complete the following steps:
+
+**a.** In VMware Player, click Edit virtual machine settings. If you have multiple virtual machines created, you
+must first select which one you intend to edit.
+
+**b.** In the pop-up window, under the Hardware tab, select CD/DVD (SATA), and on the right side (under
+Connections), select the Use ISO image file option, and click Browse to search through your file
+system for the Linux Mint .iso image file downloaded in Part 1.
+Selecting the Linux .iso file causes it to be automatically mounted to the CD/DVD drive when the virtual
+machine boots, which, in turn, causes the system to boot and run the Linux installation image.
+
+**c.** Select Network Adapter, and click OK.
+The network adapter is currently set to NAT mode, which allows your virtual machine to access the
+network through the host computer system by translating all Internet requests through the VMware player,
+much like a gateway router. This gives your virtual machine a private network address separate from your
+home network.
