@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Aug  4 15:18:57 2022
+# Process ID: 42674
+# Current directory: /home/bill/RISCV
+# Command line: vivado
+# Log file: /home/bill/RISCV/vivado.log
+# Journal file: /home/bill/RISCV/vivado.jou
+# Running On: bill-virtual-machine, OS: Linux, CPU Frequency: 3192.001 MHz, CPU Physical cores: 4, Host memory: 8302 MB
+#-----------------------------------------------------------
+start_gui
+/home/bill/RISCV/neorv32-setups-main_code/vivado/arty-a7-test-setup/create_project.tcl
+open_project /home/bill/RISCV/work/arty-a7-35-test-setup.xpr
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+add_files -norecurse -scan_for_includes {/home/bill/RISCV/neorv32-setups-main_code/neorv32/rtl/test_setups/neorv32_test_setup_bootloader.vhd /home/bill/RISCV/neorv32-setups-main_code/neorv32/rtl/test_setups/neorv32_test_setup_approm.vhd}
+import_files -norecurse {/home/bill/RISCV/neorv32-setups-main_code/neorv32/rtl/test_setups/neorv32_test_setup_bootloader.vhd /home/bill/RISCV/neorv32-setups-main_code/neorv32/rtl/test_setups/neorv32_test_setup_approm.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top neorv32_test_setup_bootloader [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+add_files -norecurse -scan_for_includes /home/bill/RISCV/neorv32-setups-main_code/neorv32/rtl/core/neorv32_package.vhd
+import_files -norecurse /home/bill/RISCV/neorv32-setups-main_code/neorv32/rtl/core/neorv32_package.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files /home/bill/RISCV/work/arty-a7-35-test-setup.srcs/sources_1/imports/test_setups/neorv32_test_setup_approm.vhd] -no_script -reset -force -quiet
+remove_files  /home/bill/RISCV/work/arty-a7-35-test-setup.srcs/sources_1/imports/test_setups/neorv32_test_setup_approm.vhd
+remove_files  /home/bill/RISCV/work/arty-a7-35-test-setup.srcs/sources_1/imports/test_setups/neorv32_test_setup_approm.vhd

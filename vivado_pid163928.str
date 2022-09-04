@@ -1,0 +1,632 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 163928
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Aug 05 16:33:32 BST 2022
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Ubuntu
+OS Version: 5.15.0-43-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 0
+Screen size: 1920x982
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/bill/RISCV/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/home/bill/RISCV/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	bill
+User home directory: /home/bill
+User working directory: /home/bill/RISCV
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/bill/RISCV/Vivado
+HDI_APPROOT: /home/bill/RISCV/Vivado/2022.1
+RDI_DATADIR: /home/bill/RISCV/Vivado/2022.1/data
+RDI_BINDIR: /home/bill/RISCV/Vivado/2022.1/bin
+
+Vivado preferences file: /home/bill/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/bill/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/bill/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/home/bill/RISCV/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/bill/RISCV/vivado.log
+Vivado journal file: 	/home/bill/RISCV/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-163928-bill-virtual-machine
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/bill/RISCV/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /home/bill/RISCV/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /home/bill/RISCV/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /home/bill/RISCV/Vivado/2022.1
+XILINX_VITIS: 
+XILINX_VIVADO: /home/bill/RISCV/Vivado/2022.1
+XILINX_VIVADO_HLS: /home/bill/RISCV/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,839 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,840 MB. GUI used memory: 111 MB. Current time: 8/5/22, 4:33:33 PM BST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/bill/RISCV/work/arty-a7-35-test-setup.xpr", 0); // r
+// Opening Vivado Project: /home/bill/RISCV/work/arty-a7-35-test-setup.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/bill/RISCV/work/arty-a7-35-test-setup.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/bill/RISCV/work/arty-a7-35-test-setup.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+86388kb) [00:00:56]
+// [Engine Memory]: 1,993 MB (+1938852kb) [00:00:56]
+// WARNING: HEventQueue.dispatchEvent() is taking  2896 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/bill/RISCV/Vivado/2022.1/data/ip'. 
+// [GUI Memory]: 102 MB (+13409kb) [00:00:58]
+// Project name: arty-a7-35-test-setup; location: /home/bill/RISCV/work; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bA
+// WARNING: HEventQueue.dispatchEvent() is taking  3578 ms.
+// [GUI Memory]: 118 MB (+12038kb) [00:01:03]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Fri Aug 05 16:13:16 BST 2022 ; 00:01:37 ; Vivado Synthesis Defaults (Vivado Synthesis 2022) ; Vivado Synthesis Default Reports (Vivado Synthesis 2022) ; xc7a35ticsg324-1L ; bill-virtual-machine ; Vivado Synthesis Defaults", 0); // az
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1_copy_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Fri Aug 05 16:15:22 BST 2022 ; 00:00:49 ; Vivado Synthesis Defaults (Vivado Synthesis 2022) ; Vivado Synthesis Default Reports (Vivado Synthesis 2022) ; xc7a35ticsg324-1L ; bill-virtual-machine ; Vivado Synthesis Defaults", 1, "synth_1_copy_1", 0, true); // az - Node
+// PAPropertyPanels.initPanels (synth_1_copy_1) elapsed time: 0.4s
+// [GUI Memory]: 128 MB (+4135kb) [00:01:11]
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1_copy_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Fri Aug 05 16:15:22 BST 2022 ; 00:00:49 ; Vivado Synthesis Defaults (Vivado Synthesis 2022) ; Vivado Synthesis Default Reports (Vivado Synthesis 2022) ; xc7a35ticsg324-1L ; bill-virtual-machine ; Vivado Synthesis Defaults", 1); // az
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1_copy_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 2 
+// Tcl Message: [Fri Aug  5 16:34:09 2022] Launched synth_1_copy_1... Run output will be captured here: /home/bill/RISCV/work/arty-a7-35-test-setup.runs/synth_1_copy_1/runme.log [Fri Aug  5 16:34:09 2022] Launched impl_2... Run output will be captured here: /home/bill/RISCV/work/arty-a7-35-test-setup.runs/impl_2/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 364ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 602ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1844 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,973 MB. GUI used memory: 63 MB. Current time: 8/5/22, 4:34:39 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  2050 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1305 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2267 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3664 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 920ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 248ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 554ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1217 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1075ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1076 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1071 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1474ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1474 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1687 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1572ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1572 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3569ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3569 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1275 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1274 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1140ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2755 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5872 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2251 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1190 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1165 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2658 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1452 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1864 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1132 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6252 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1105 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1374 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1042 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1101 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5669 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2841 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1164ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2242 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1402ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1402 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1313 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1142 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1308 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1099 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1499 ms.
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4006 ms.
+// Elapsed time: 330 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+// WARNING: HEventQueue.dispatchEvent() is taking  3352 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3789 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3675 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3836 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3817 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3928 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3800 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3863 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3605 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3343 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3567 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3754 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3935 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3951 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3737 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3965 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3782 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4059 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3792 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3656 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3995 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3706 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3789 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3846 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3703 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3361 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3680 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,976 MB. GUI used memory: 63 MB. Current time: 8/5/22, 5:04:37 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3934 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3647 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3725 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3724 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3746 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3428 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3731 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3946 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3972 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3722 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3812 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3749 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3863 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3854 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4047 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3663 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3305 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3578 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3923 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4051 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3822 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3858 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7467 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2280 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2549 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3850 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3806 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3614 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3890 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3906 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3580 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,977 MB. GUI used memory: 55 MB. Current time: 8/5/22, 5:34:41 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3455 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3668 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3630 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3904 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3727 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3813 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3615 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3630 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3804 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3963 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4073 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3604 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3724 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3838 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3785 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3580 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4026 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3599 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3883 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3752 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3676 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3947 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3668 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3822 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 6:04:43 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3715 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3721 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3799 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3591 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3975 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3807 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3882 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3700 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3838 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3782 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3667 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3421 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3581 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3871 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3946 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3674 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3949 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3970 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3932 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3959 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3793 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3719 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3941 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3709 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3862 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4028 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3960 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3938 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3734 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3841 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3738 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3808 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3566 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3545 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3869 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3657 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3911 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 6:34:45 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3675 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4005 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3758 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3622 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3745 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3764 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3647 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3832 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3965 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3479 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3528 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3826 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3739 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4038 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4023 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3977 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3696 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3426 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3686 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3912 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3979 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1922 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4028 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1461 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4067 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3659 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3828 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3677 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3842 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3932 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 788ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1396 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1262 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2693 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1233 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 950ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3861 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 7:04:47 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3965 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3995 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3891 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3780 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3722 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3442 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3649 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4072 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3929 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3952 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3942 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3953 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3655 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4007 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4006 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3649 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4013 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3769 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3336 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3811 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3710 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3724 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1437 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4005 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3800 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1251 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1257ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4095 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3939 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3530 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3614 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 7:34:50 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3721 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3618 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4006 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4017 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3630 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3862 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3862 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3676 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3677 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3646 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3590 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3688 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3804 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3700 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3770 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3538 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3787 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3891 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3952 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3764 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3668 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3948 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4071 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3879 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3892 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3767 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3735 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3942 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3842 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3815 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3881 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3770 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 8:04:53 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3876 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3761 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1115 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3695 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3907 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3757 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3905 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3824 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3801 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4019 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4021 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3881 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3793 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3706 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3783 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4007 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3587 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4028 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4018 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3645 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1646 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2281ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2281 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1134 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1174ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1174 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4059 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4047 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3912 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3913 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3637 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4010 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3876 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3773 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 54 MB. Current time: 8/5/22, 8:34:56 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3838 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3858 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3634 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3623 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3946 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3623 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4062 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3897 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4062 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3981 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4031 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3928 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3692 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3701 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3639 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3711 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3874 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3774 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4047 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3685 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3890 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3654 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3901 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3957 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3760 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3733 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3789 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2650 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1225917 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4315 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3693 ms. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  63074 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2858ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2858 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1111ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1111 ms.
+// WARNING: HTimer (HMemoryUtils Timer) is taking 4452ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4485 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3972 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1433 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 827ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 19586 ms. Increasing delay to 58758 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 9:20:12 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  65764 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 0 ms. Decreasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1555ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1555 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 9:49:04 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 10:19:08 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  4619 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 54 MB. Current time: 8/5/22, 10:49:04 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 11:19:04 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,978 MB. GUI used memory: 53 MB. Current time: 8/5/22, 11:49:04 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 53 MB. Current time: 8/6/22, 12:19:04 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 54 MB. Current time: 8/6/22, 12:49:05 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 54 MB. Current time: 8/6/22, 1:19:05 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 53 MB. Current time: 8/6/22, 1:49:05 AM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  3047 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1979ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1979 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1022 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1263 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1669ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1670 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1974 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2314 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2755 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2707 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1563 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 53 MB. Current time: 8/6/22, 2:19:08 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 53 MB. Current time: 8/6/22, 2:49:09 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 53 MB. Current time: 8/6/22, 3:19:09 AM BST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1620ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1621 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1694 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1352 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1599 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14265 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15179 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6998 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17615 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3486 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,979 MB. GUI used memory: 49 MB. Current time: 8/6/22, 3:49:14 AM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  1138 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1270 ms.
+// Elapsed time: 40242 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// WARNING: HEventQueue.dispatchEvent() is taking  6700 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3547 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1475 ms.
+// Elapsed time: 77 seconds
+selectButton("NEXT", "Next >"); // JButton
+// WARNING: HEventQueue.dispatchEvent() is taking  3928 ms.
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  8804 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1339 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3991 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2192 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1431 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1655 ms.
+// Elapsed time: 98 seconds
+setFileChooser("/home/bill/RISCV/neorv32-setups-main_code/neorv32/neorv32_package.vhd");
+// WARNING: HEventQueue.dispatchEvent() is taking  1384 ms.
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 191 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2964 ms.
+dismissDialog("Add Sources"); // c
+// WARNING: updateGUI() is taking  1524 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1569 ms.
+dismissDialog("Checking for Conflicts"); // bA
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Import Source Conflicts"); // bV
+// WARNING: HEventQueue.dispatchEvent() is taking  1302 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1256 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1082 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3107 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1266 ms.
+// Elapsed time: 41 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+// Elapsed time: 36 seconds
+closeMainWindow("arty-a7-35-test-setup - [/home/bill/RISCV/work/arty-a7-35-test-setup.xpr] - Vivado 2022.1"); // bb
+// Run Command: PAResourceCommand.PACommandNames_EXIT
