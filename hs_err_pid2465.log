@@ -1,0 +1,20 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/bill/RISCV/Vivado/2022.1/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7fc7b4f43ecb]
+/home/bill/RISCV/Vivado/2022.1/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7fc7b4f4ac81]
+/home/bill/RISCV/Vivado/2022.1/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7fc7b4f3ed23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x43090) [0x7fc80bdd0090]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(HDDAFilteredSrcIter::getNext_()+0xdb) [0x7fc7d41dd0eb]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(HDDAFilteredSrcIter::next()+0x11) [0x7fc7d41dd621]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraph::addFileSet_(HADAFileSet*, bool)+0x115) [0x7fc7d42c5725]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraph::addFileSet(HADAFileSet*)+0x3f) [0x7fc7d42c5b5f]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraphMgr::getCurrentGraph(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)+0x512) [0x7fc7d42d63c2]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<HADGDesignGraph*>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<HADGDesignGraph* (HADGDesignGraphMgr::*)(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType), HADGDesignGraphMgr*, HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType> >, HADGDesignGraph*> >::_M_invoke(std::_Any_data const&)+0x4a) [0x7fc7d42d7bba]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(+0x47cf6b) [0x7fc7d42cbf6b]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x114df) [0x7fc80bd7b4df]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/librdi_filemgmt.so(std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<HADGDesignGraph* (HADGDesignGraphMgr::*)(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType), HADGDesignGraphMgr*, HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType> >, HADGDesignGraph*>::_Async_state_impl(std::thread::_Invoker<std::tuple<HADGDesignGraph* (HADGDesignGraphMgr::*)(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType), HADGDesignGraphMgr*, HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType> >&&)::{lambda()#1}> > >::_M_run()+0x116) [0x7fc7d42d8f76]
+/home/bill/RISCV/Vivado/2022.1/lib/lnx64.o/Ubuntu/20/libstdc++.so.6(+0xd6de4) [0x7fc80c282de4]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x8609) [0x7fc80bd72609]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x43) [0x7fc80beac133]
