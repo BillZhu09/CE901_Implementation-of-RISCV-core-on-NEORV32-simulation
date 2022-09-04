@@ -6,7 +6,7 @@
 * 1.1 [*RISCV*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/RISCV.md)
 * 1.2 [*SOC*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/SOC.md)
 * 1.3 [*CPU*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/CPU.md)
-* 1.4 [*Neorv32*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/Neorv32)
+* 1.4 [*Neorv32*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/Neorv32.md)
 * 1.5 [*Vivado*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/Vivado.md)
 * 1.6 [*True Random Number Generator and Pseudo-Random Number Generator*](https://github.com/BillZhu09/CE901_Implementation-of-RISCV-core-on-NEORV32-simulation/blob/main/True%20Random%20Number%20Generator%20and%20Pseudo-Random%20Number%20Generator.md)
 
