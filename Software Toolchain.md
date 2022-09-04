@@ -21,3 +21,18 @@ Unpack the downloaded toolchain archive and copy the content to a location in yo
 
 ### 1.2.2. Use a Third Party Toolchain
 Of course you can also use any other prebuilt version of the toolchain. There are a lot RISC-V GCC packages out there - even for Windows. On Linux system you might even be able to fetch a toolchain via your distribution’s package manager.
+
+## 1.3. Installation
+Now you have the toolchain binaries. The last step is to add them to your PATH environment variable (if you have not already done so): make sure to add the binaries folder (bin) of your toolchain.
+
+```
+$ export PATH=$PATH:/opt/riscv/bin
+```
+
+## 1.4. Testing the Installation
+To make sure everything works fine, navigate to an example project in the NEORV32 example folder and execute the following command:
+```
+neorv32/sw/example/blink_led$ make check
+```
+
+This will test all the tools required for generating NEORV32 executables. Everything is working fine if Toolchain check OK appears at the end.
