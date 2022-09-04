@@ -70,15 +70,14 @@ RAM, how many CPU cores you want, and add additional drives and peripheral compo
 **g.** When you have customized and completed the process, you are now ready to run your virtual machine
 and install an operating system.
 
-# Step 2: Install the Linux operating system on the virtual computer.
+## Step 2: Install the Linux operating system on the virtual computer.
 
 To install from an .iso bootable image file, complete the following steps:
 
 **a.** In VMware Player, click Edit virtual machine settings. If you have multiple virtual machines created, you
 must first select which one you intend to edit.
 
-**b.** In the pop-up window, under the Hardware tab, select CD/DVD (SATA), and on the right side (under
-Connections), select the Use ISO image file option, and click Browse to search through your file
+**b.** In the pop-up window, under the Hardware tab, select CD/DVD (SATA), and on the right side, select the Use ISO image file option, and click Browse to search through your file
 system for the Linux Mint .iso image file downloaded in Part 1.
 Selecting the Linux .iso file causes it to be automatically mounted to the CD/DVD drive when the virtual
 machine boots, which, in turn, causes the system to boot and run the Linux installation image.
@@ -88,3 +87,16 @@ The network adapter is currently set to NAT mode, which allows your virtual mach
 network through the host computer system by translating all Internet requests through the VMware player,
 much like a gateway router. This gives your virtual machine a private network address separate from your
 home network.
+
+**d.** When you are finished click OK.
+
+**e.** Click Play virtual machine to launch your virtual machine and boot to Linux.
+When the boot process has completed you should be presented with a Linux Mint desktop.
+
+**f.** To permanently install Linux Mint on the virtual machine hard disk drive, on the desktop,
+double-click the Install Linux Mint disk icon and follow the installation procedure.
+During the installation, you will be presented with a warning message that installing to the drive will erase
+everything on the disk drive; this refers to the virtual disk drive, not the host computer physical disk drive.
+
+**g.** When you have finished the installation procedure, you should have a Linux Mint virtual machine that you
+can run in a window alongside your host computer system.
