@@ -50,3 +50,4 @@ generic (
   More specific result of testing setup can be found: https://stnolting.github.io/neorv32/ug/#_general_hardware_setup
   
   
+***The software framework setup needs to be aware of the hardware configuration in order to permit executables to be truly executed on the NEORV32 Processor. The memory configuration is the main topic of this manual. Refer to the Enabling RISC-V CPU Extensions section to enable specific CPU ISA features.***
