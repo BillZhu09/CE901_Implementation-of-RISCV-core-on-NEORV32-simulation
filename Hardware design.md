@@ -75,3 +75,21 @@ __neorv32_heap_size = DEFINED(__neorv32_heap_size) ? __neorv32_heap_size : 0;
 __neorv32_rom_base = DEFINED(__neorv32_rom_base) ? __neorv32_rom_base : 0x00000000; /* = VHDL package's "ispace_base_c" */ 
 __neorv32_ram_base = DEFINED(__neorv32_ram_base) ? __neorv32_ram_base : 0x80000000; /* = VHDL package's "dspace_base_c" */ 
  ```
+
+***2.*** Only the the neorv32_ram_size variable needs to modified! If you have changed the default DMEM (MEM_INT_DMEM_SIZE generic) size then change the right-most parameter (here: 8kB) so it is equal to your DMEM hardware configuration. The neorv32_rom_size does not need to be modified even if you have changed the default IMEM size. For more information see https://stnolting.github.io/neorv32/#_linker_script
+
+***3.*** Done! Save your changes and close the linker script.
+
+
+## Overriding the Default Configuration
+
+This will not change the default linker script at all. Hence, this approach is recommended as it allows to make per-project memory configuration without changing the code base.
+
+The RAM and ROM sizes from Modifying the Linker Script (as well as the base addresses) can also be modified by overriding the default values when invoking make. Therefore, the command needs to pass the according values to the linker using the makefile’s USER_FLAGS variable.
+
+*Example: override default RAM size while invoking make*
+ ```
+ $ make USER_FLAGS+="-Wl,--defsym,__neorv32_rom_size=16k" clean_all exe
+ ```
+ 
+ The -Wl will pass the following commands/flags to the linker. --defsym will define a symbol for the linker. neorv32_rom_size is the variable that will be defined and 16k is the value assigned to it (= 16*1024 bytes). As a result, this command will set the RAM region to a size of 16kB.
