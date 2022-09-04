@@ -6,6 +6,6 @@ The NEORV32 project features two minimalistic pre-configured test setups in rtl/
 
 **rtl/test_setups/neorv32_testsetup_bootloader.vhd**: this setups uses the UART and the default NEORV32 bootloader to upload new software executables. Use this setup if your board does provide a UART interface.
 
-***1.** Create a new project with your FPGA EDA tool of choice.
+**1.** Create a new project with your FPGA EDA tool of choice.
 
-***2.** Add all VHDL files from the project’s rtl/core folder to your project.
+**2.** Add all VHDL files from the project’s rtl/core folder to your project.
